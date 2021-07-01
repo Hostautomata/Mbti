@@ -6,26 +6,31 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
+body{
+	background-color: whitesmoke;
+}
 	p{
 		text-align: center;
 		font-weight: bold;
 	}
-	.top_main{
+	#top_main{
 		width:100%; 
 	}
-	.main_img{
-		position: relative;
+	#main_img{
+		width:100%;
+		height: 300px;
+		background-image: url("../images/pet.jpg");
+		background-size: contain;
+		background-repeat: repeat-x;
 	}
-	.main_text{
-		position: absolute;
-		top:40%;
-		left:50%;
-		transform: translate(-50%,-50%);
+
+	#main_text{
 	}
-	.title{
+	#main_img > p{
 		font-size: 4em;
 		color: white;
 		font-weight: bold;
+		align-content: center;
 	}
 	.menu{
 		width: 20%;
@@ -36,20 +41,19 @@
 		border-left : 1px white solid;
         box-sizing:border-box;
 	}
-	.menubar{
+	#menubar{
 		clear:both;
 		width:100%;
-		
+		margin-bottom: 70px;
 	}
-	.menubar>div:hover{
+	#menubar>div:hover{
         background-color: darkorange;
         opacity: 0.5;
 		
 	}
 	
-	.sign{
+	#sign{
 		text-decoration: none;
-		float: right;
 		text-align: right;
 		margin-right: 10px;
 	}
@@ -60,21 +64,18 @@
 </style>
 </head>
 <body>
-		<div class="top_main">
-			<div class="main_img"><img src="../images/pet.jpg" style="width:100%;"></div>
-			<div class="main_text"><p class="title">나는 뭐키우지?</p></div>
+		<div id="top_main">
+			<div id="main_img"><p>나는 뭐키우지?</p></div>
 		</div>
-		<p class="sign">
-			<a class="login" href="">로그인</a> | 
-			<a class="join" href="">회원가입</a>
+		<p id="sign">
+			<a href="login.jsp">로그인</a> | 
+			<a href="join.jsp">회원가입</a>
 		</p>
-	<nav>
-		<div class="menubar">
-			<div class="menu"><p>검사하기</p></div>
-			<div class="menu"><p>커뮤니티</p></div>
-			<div class="menu"><p>관련사이트</p></div>
-			<div class="menu"><p>게시판</p></div>
+		<div id="menubar">
+			<div class="menu"><a href="main.jsp"><p>검사하기</p></a></div>
+			<div class="menu"><a href="community_list.jsp"><p>커뮤니티</p></a></div>
+			<div class="menu"><a href="othersite_list.jsp"><p>관련사이트</p></a></div>
+			<div class="menu"><a href="board_list.jsp"><p>공지사항</p></a></div>
 		</div>
-	</nav>	
 </body>
 </html>

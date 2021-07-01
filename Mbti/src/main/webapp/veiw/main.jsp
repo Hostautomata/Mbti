@@ -6,9 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-body{
-	background-color: whitesmoke;
-}
+
 div{ 
 		margin: auto;
 	} 
@@ -18,11 +16,7 @@ div{
 	p{
 		text-align: center;
 	}
-	
-	
-	.examin
-		float: left;
-	}
+	float: left;
 	.skip{
 		float: right;
 		width:40%;
@@ -57,7 +51,7 @@ div{
 				<fieldset>
 					<img alt="사진" src="../images/dog.jpg">
 					<p>제 MBTI유형을 몰라요ㅠ</p>
-					<p><input type="button" value="검사"></p>
+					<a href="check_type.jsp"><p><input type="button" value="검사"></p></a>
 				</fieldset>
 			</form>
 		</div>
@@ -66,7 +60,7 @@ div{
 				<fieldset>
 					<img alt="사진" src="../images/cat.jpg" >
 					<p>제 MBTI유형을 알아요!</p>
-					<p><input type="button" value="스킵"></p>
+					<a href="input_type"><p><input type="button" value="스킵"></p></a>
 				</fieldset>
 			</form>
 		</div>
